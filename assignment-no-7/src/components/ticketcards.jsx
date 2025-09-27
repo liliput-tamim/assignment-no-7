@@ -3,7 +3,7 @@ import React from 'react'
 const TicketCards = ({ tickets, onTicketClick, getPriorityColor, inProgressTickets }) => {
   return (
     <div className="lg:col-span-2">
-      <h2 className="text-2xl font-bold mb-6 text-gray-700">Customer Tickets</h2>
+      <h2 className="text-2xl font-bold mb-6 text-gray-700">Customer Tickets ({tickets.length})</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {tickets.map((ticket) => {
           const isInProgress = inProgressTickets.some(t => t.id === ticket.id)
@@ -27,19 +27,19 @@ const TicketCards = ({ tickets, onTicketClick, getPriorityColor, inProgressTicke
                     {isInProgress ? 'In Progress' : 'Open'}
                   </button>
                 </div>
-                <p className="text-gray-600 text-sm mb-3">{ticket.description}</p>
+                <p className="text-gray-600 text-sm mb-3 line-clamp-2">{ticket.description}</p>
                 
-                <div className="flex justify-between items-end">
-                  <div className="flex flex-wrap gap-2 items-center">
-                    <span className={`text-xs font-semibold uppercase ${getPriorityColor(ticket.priority)}`}>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className={`text-xs font-semibold px-2 py-1 rounded ${getPriorityColor(ticket.priority)}`}>
                       {ticket.priority} PRIORITY
                     </span>
-                    
+                    <span className="text-xs text-gray-500">{ticket.status}</span>
                   </div>
                   
-                  <div className="text-xs text-gray-500 text-right flex gap-2">
-                    <p>{ticket.customer}</p>
-                    <p>{ticket.createdAt}</p>
+                  <div className="flex justify-between items-center text-xs text-gray-500">
+                    <span>👤 {ticket.customer}</span>
+                    <span>📅 {ticket.createdAt}</span>
                   </div>
                 </div>
               </div>

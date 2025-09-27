@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Navbar from './components/navbar'
 import Banner from './components/banner'
 import TicketCards from './components/ticketcards'
@@ -6,17 +8,24 @@ import TaskStatus from './components/taskstutas'
 import Footer from './components/footer'
 
 function App() {
-  const [tickets] = useState([
-    { id: 1, title: 'Login Issue', description: 'User cannot login to account', priority: 'high', customer: 'John Doe', createdAt: '2025-01-15' },
-    { id: 2, title: 'Payment Problem', description: 'Payment gateway not working', priority: 'medium', customer: 'Jane Smith', createdAt: '2025-01-14' }
-  ])
+  const [tickets, setTickets] = useState([])
   const [inProgressTickets, setInProgressTickets] = useState([])
   const [resolvedTickets, setResolvedTickets] = useState([])
 
+  useEffect(() => {
+    fetch('/fake-data.json')
+      .then(response => response.json())
+      .then(data => setTickets(data))
+      .catch(error => console.error('Error loading tickets:', error))
+  }, [])
+
   const handleTicketClick = (ticket) => {
-    if (!inProgressTickets.some(t => t.id === ticket.id)) {
-      setInProgressTickets([...inProgressTickets, ticket])
+    if (inProgressTickets.some(t => t.id === ticket.id)) {
+      toast.info('Ticket is already in progress!')
+      return
     }
+    setInProgressTickets([...inProgressTickets, ticket])
+    toast.success(`Ticket "${ticket.title}" added to Task Status!`)
   }
 
   const handleCompleteTicket = (ticketId) => {
@@ -24,15 +33,17 @@ function App() {
     if (ticket) {
       setInProgressTickets(inProgressTickets.filter(t => t.id !== ticketId))
       setResolvedTickets([...resolvedTickets, ticket])
+      toast.success(`Ticket "${ticket.title}" completed and resolved!`)
     }
   }
 
   const getPriorityColor = (priority) => {
     switch(priority) {
-      case 'high': return 'text-red-600'
-      case 'medium': return 'text-yellow-600'
-      case 'low': return 'text-green-600'
-      default: return 'text-gray-600'
+      case 'Critical': return 'text-red-600 bg-red-100'
+      case 'High': return 'text-red-600 bg-red-100'
+      case 'Medium': return 'text-yellow-600 bg-yellow-100'
+      case 'Low': return 'text-green-600 bg-green-100'
+      default: return 'text-gray-600 bg-gray-100'
     }
   }
 
@@ -47,7 +58,7 @@ function App() {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <TicketCards 
-            tickets={tickets}
+            tickets={tickets.filter(ticket => !resolvedTickets.some(r => r.id === ticket.id))}
             onTicketClick={handleTicketClick}
             getPriorityColor={getPriorityColor}
             inProgressTickets={inProgressTickets}
@@ -61,8 +72,15 @@ function App() {
       </div>
 
       <Footer />
-
-
+      
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        theme="light"
+      />
     </div>
   )
 }

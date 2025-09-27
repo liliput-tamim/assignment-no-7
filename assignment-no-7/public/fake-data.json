@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login Authentication Issue",
+    "description": "User unable to login with correct credentials. Getting authentication error repeatedly.",
+    "customer": "John Smith",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-01-15"
+  },
+  {
+    "id": 2,
+    "title": "Payment Gateway Failure",
+    "description": "Payment processing fails at checkout. Transaction gets declined without proper error message.",
+    "customer": "Sarah Johnson",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-01-14"
+  },
+  {
+    "id": 3,
+    "title": "Email Notification Not Working",
+    "description": "Users not receiving email confirmations after successful registration or purchase.",
+    "customer": "Mike Davis",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-01-13"
+  },
+  {
+    "id": 4,
+    "title": "Mobile App Crashes",
+    "description": "App crashes when trying to upload profile picture on iOS devices.",
+    "customer": "Emily Wilson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-01-12"
+  },
+  {
+    "id": 5,
+    "title": "Search Function Not Working",
+    "description": "Search bar returns no results even for existing products and services.",
+    "customer": "David Brown",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-01-11"
+  },
+  {
+    "id": 6,
+    "title": "Password Reset Link Expired",
+    "description": "Password reset links expire immediately after being sent to user email.",
+    "customer": "Lisa Anderson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-01-10"
+  },
+  {
+    "id": 7,
+    "title": "Dashboard Loading Slowly",
+    "description": "User dashboard takes more than 30 seconds to load completely.",
+    "customer": "Robert Taylor",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-01-09"
+  },
+  {
+    "id": 8,
+    "title": "File Upload Size Limit",
+    "description": "Cannot upload files larger than 1MB even though limit should be 10MB.",
+    "customer": "Jennifer Martinez",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-01-08"
+  },
+  {
+    "id": 9,
+    "title": "API Response Timeout",
+    "description": "Third-party API integration timing out causing data sync issues.",
+    "customer": "Christopher Lee",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-01-07"
+  },
+  {
+    "id": 10,
+    "title": "User Profile Update Error",
+    "description": "Error occurs when users try to update their profile information.",
+    "customer": "Amanda White",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-01-06"
+  },
+  {
+    "id": 11,
+    "title": "Shopping Cart Items Disappear",
+    "description": "Items randomly disappear from shopping cart during browsing session.",
+    "customer": "Kevin Garcia",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-01-05"
+  },
+  {
+    "id": 12,
+    "title": "Two-Factor Authentication Issue",
+    "description": "2FA codes not being sent to registered phone numbers.",
+    "customer": "Michelle Rodriguez",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-01-04"
+  },
+  {
+    "id": 13,
+    "title": "Report Generation Failed",
+    "description": "Monthly reports fail to generate and download for premium users.",
+    "customer": "James Wilson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-01-03"
+  },
+  {
+    "id": 14,
+    "title": "Social Media Login Error",
+    "description": "Google and Facebook login options not working properly.",
+    "customer": "Rachel Thompson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-01-02"
+  },
+  {
+    "id": 15,
+    "title": "Database Connection Timeout",
+    "description": "Intermittent database connection issues causing service disruption.",
+    "customer": "Daniel Moore",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-01-01"
+  }
+]
