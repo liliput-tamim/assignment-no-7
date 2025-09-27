@@ -1,0 +1,71 @@
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Custom responsive utilities */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .navbar .flex-none {
+    margin-top: 1rem;
+  }
+  
+  .hero {
+    min-height: 150px !important;
+  }
+  
+  .hero-content {
+    padding: 1rem;
+  }
+  
+  .stats {
+    flex-direction: column;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card hover effects */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Custom gradient background */
+.bg-gradient-to-r {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Toast container positioning */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+/* Responsive text */
+@media (max-width: 640px) {
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+}

@@ -1,10 +1,9 @@
-import { useState } from 'react'
-import Banner from './components/banner'
-import Footer from './components/footer'
+import React, { useState } from 'react'
 import Navbar from './components/navbar'
+import Banner from './components/banner'
 import TicketCards from './components/ticketcards'
 import TaskStatus from './components/taskstutas'
-import './App.css'
+import Footer from './components/footer'
 
 function App() {
   const [tickets] = useState([
@@ -38,9 +37,13 @@ function App() {
   }
 
   return (
-    <>
+    <div className="min-h-screen bg-gray-50">
       <Navbar />
-      <Banner inProgressCount={inProgressTickets.length} resolvedCount={resolvedTickets.length} />
+      <Banner 
+        inProgressCount={inProgressTickets.length} 
+        resolvedCount={resolvedTickets.length} 
+      />
+      
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <TicketCards 
@@ -56,8 +59,11 @@ function App() {
           />
         </div>
       </div>
+
       <Footer />
-    </>
+
+
+    </div>
   )
 }
 
