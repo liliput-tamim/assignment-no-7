@@ -10,7 +10,7 @@ const TaskStatus = ({ inProgressTickets, resolvedTickets, onCompleteTicket }) =>
         ) : (
           <div className="space-y-4">
             {inProgressTickets.map((ticket) => (
-              <div key={progress-${ticket.id}} className="border rounded-lg p-4">
+              <div key={`progress-${ticket.id}`} className="border rounded-lg p-4">
                 <h4 className="font-semibold mb-2 text-gray-700">{ticket.title}</h4>
                 
                 <button 
@@ -30,7 +30,7 @@ const TaskStatus = ({ inProgressTickets, resolvedTickets, onCompleteTicket }) =>
           <h3 className="text-xl font-bold mb-4 text-gray-800">Resolved Task</h3>
           <div className="space-y-3">
             {resolvedTickets.map((ticket) => (
-              <div key={resolved-${ticket.id}} className="bg-gray-200 border rounded-lg p-4">
+              <div key={`resolved-${ticket.id}`} className="bg-gray-200 border rounded-lg p-4">
                 <h4 className="font-semibold text-gray-700 mb-1">{ticket.title}</h4>
                 
               </div>
