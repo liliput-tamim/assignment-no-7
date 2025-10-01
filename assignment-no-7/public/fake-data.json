@@ -1,110 +1,110 @@
 [
   {
     "id": 1,
-    "title": "Login Issue - Cannot Access Dashboard",
-    "description": "User unable to login to dashboard after password reset. Getting authentication error.",
-    "customer": "John Smith",
+    "title": "Account Access Problem - Dashboard Locked",
+    "description": "Customer experiencing login difficulties after recent password change. Authentication system showing errors.",
+    "customer": "Alex Rahman",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2024-01-15"
+    "createdAt": "2024-02-15"
   },
   {
     "id": 2,
-    "title": "Payment Gateway Not Working",
-    "description": "Payment processing fails at checkout. Users cannot complete purchases.",
-    "customer": "Sarah Johnson",
-    "priority": "Critical",
+    "title": "Transaction Processing Error",
+    "description": "Online payment system malfunctioning during checkout process. Customers unable to finalize orders.",
+    "customer": "Maria Santos",
+    "priority": "Low",
     "status": "Open",
-    "createdAt": "2024-01-14"
+    "createdAt": "2024-02-14"
   },
   {
     "id": 3,
-    "title": "Email Notifications Not Sending",
-    "description": "Automated email notifications for order confirmations are not being sent to customers.",
-    "customer": "Mike Davis",
+    "title": "Notification System Malfunction",
+    "description": "Email alerts for purchase confirmations not reaching customers. System appears offline.",
+    "customer": "James Wilson",
     "priority": "Medium",
     "status": "Open",
-    "createdAt": "2024-01-13"
+    "createdAt": "2024-02-13"
   },
   {
     "id": 4,
-    "title": "Mobile App Crashes on Startup",
-    "description": "iOS app crashes immediately after opening. Affects version 2.1.3.",
-    "customer": "Emily Wilson",
+    "title": "Application Startup Failure",
+    "description": "Mobile application terminates unexpectedly on launch. Issue affects iOS version 3.2.1.",
+    "customer": "Priya Patel",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2024-01-12"
+    "createdAt": "2024-02-12"
   },
   {
     "id": 5,
-    "title": "Search Function Returns No Results",
-    "description": "Product search functionality is broken. No results shown for any search query.",
-    "customer": "David Brown",
+    "title": "Product Discovery Issue",
+    "description": "Search feature not displaying results for any product queries. Database connection suspected.",
+    "customer": "Michael Chen",
     "priority": "Medium",
     "status": "Open",
-    "createdAt": "2024-01-11"
+    "createdAt": "2024-02-11"
   },
   {
     "id": 6,
-    "title": "Database Connection Timeout",
-    "description": "Frequent database timeouts causing slow page loads and errors.",
-    "customer": "Lisa Anderson",
-    "priority": "Critical",
+    "title": "Server Response Delays",
+    "description": "Database queries timing out frequently. Website performance severely impacted.",
+    "customer": "Sophie Turner",
+    "priority": "Low",
     "status": "Open",
-    "createdAt": "2024-01-10"
+    "createdAt": "2024-02-10"
   },
   {
     "id": 7,
-    "title": "User Profile Update Fails",
-    "description": "Users cannot update their profile information. Form submission returns error.",
-    "customer": "Robert Taylor",
+    "title": "Profile Modification Error",
+    "description": "Account settings cannot be updated. Form validation returning unexpected errors.",
+    "customer": "Ahmed Hassan",
     "priority": "Low",
     "status": "Open",
-    "createdAt": "2024-01-09"
+    "createdAt": "2024-02-09"
   },
   {
     "id": 8,
-    "title": "File Upload Size Limit Error",
-    "description": "File upload fails for files larger than 5MB despite 10MB limit setting.",
-    "customer": "Jennifer White",
+    "title": "Document Upload Restriction",
+    "description": "File uploads failing for documents over 8MB. System configured for 15MB maximum.",
+    "customer": "Emma Thompson",
     "priority": "Medium",
     "status": "Open",
-    "createdAt": "2024-01-08"
+    "createdAt": "2024-02-08"
   },
   {
     "id": 9,
-    "title": "Shopping Cart Items Disappear",
-    "description": "Items randomly disappear from shopping cart during browsing session.",
-    "customer": "Christopher Lee",
+    "title": "Cart Content Loss",
+    "description": "Selected items vanishing from shopping basket during user session. Data persistence issue.",
+    "customer": "Ryan O'Connor",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2024-01-07"
+    "createdAt": "2024-02-07"
   },
   {
     "id": 10,
-    "title": "API Rate Limit Exceeded",
-    "description": "Third-party API calls failing due to rate limit. Affecting data synchronization.",
-    "customer": "Amanda Garcia",
+    "title": "External Service Limitation",
+    "description": "Third-party integration hitting request limits. Data sync operations failing consistently.",
+    "customer": "Lisa Kim",
     "priority": "Medium",
     "status": "Open",
-    "createdAt": "2024-01-06"
+    "createdAt": "2024-02-06"
   },
   {
     "id": 11,
-    "title": "SSL Certificate Expiry Warning",
-    "description": "SSL certificate expires in 7 days. Need immediate renewal to avoid service disruption.",
-    "customer": "Kevin Martinez",
-    "priority": "Critical",
+    "title": "Security Certificate Alert",
+    "description": "Website SSL certificate approaching expiration in 5 days. Urgent renewal required.",
+    "customer": "Carlos Mendez",
+    "priority": "Low",
     "status": "Open",
-    "createdAt": "2024-01-05"
+    "createdAt": "2024-02-05"
   },
   {
     "id": 12,
-    "title": "Backup System Failure",
-    "description": "Automated backup system has failed for the past 3 days. Data at risk.",
-    "customer": "Michelle Rodriguez",
-    "priority": "Critical",
+    "title": "Data Backup Interruption",
+    "description": "Scheduled backup processes have been failing for 4 consecutive days. Critical data vulnerability.",
+    "customer": "Nina Johansson",
+    "priority": "Low",
     "status": "Open",
-    "createdAt": "2024-01-04"
+    "createdAt": "2024-02-04"
   }
 ]

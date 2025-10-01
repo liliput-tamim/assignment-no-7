@@ -48,9 +48,9 @@ const useTickets = () => {
 
   const getPriorityColor = (priority) => {
     switch (priority) {
-      case 'Critical': return 'text-red-600'
-      case 'High': return 'text-orange-600'
-      case 'Medium': return 'text-blue-600'
+      case 'Critical': return 'text-blue-600'
+      case 'High': return 'text-red-600'
+      case 'Medium': return 'text-yellow-600'
       case 'Low': return 'text-green-600'
       default: return 'text-gray-600'
     }
