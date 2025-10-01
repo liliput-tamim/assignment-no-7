@@ -1,137 +1,110 @@
 [
   {
     "id": 1,
-    "title": "Login Authentication Issue",
-    "description": "User unable to login with correct credentials. Getting authentication error repeatedly.",
+    "title": "Login Issue - Cannot Access Dashboard",
+    "description": "User unable to login to dashboard after password reset. Getting authentication error.",
     "customer": "John Smith",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2025-01-15"
+    "createdAt": "2024-01-15"
   },
   {
     "id": 2,
-    "title": "Payment Gateway Failure",
-    "description": "Payment processing fails at checkout. Transaction gets declined without proper error message.",
+    "title": "Payment Gateway Not Working",
+    "description": "Payment processing fails at checkout. Users cannot complete purchases.",
     "customer": "Sarah Johnson",
     "priority": "Critical",
     "status": "Open",
-    "createdAt": "2025-01-14"
+    "createdAt": "2024-01-14"
   },
   {
     "id": 3,
-    "title": "Email Notification Not Working",
-    "description": "Users not receiving email confirmations after successful registration or purchase.",
+    "title": "Email Notifications Not Sending",
+    "description": "Automated email notifications for order confirmations are not being sent to customers.",
     "customer": "Mike Davis",
     "priority": "Medium",
     "status": "Open",
-    "createdAt": "2025-01-13"
+    "createdAt": "2024-01-13"
   },
   {
     "id": 4,
-    "title": "Mobile App Crashes",
-    "description": "App crashes when trying to upload profile picture on iOS devices.",
+    "title": "Mobile App Crashes on Startup",
+    "description": "iOS app crashes immediately after opening. Affects version 2.1.3.",
     "customer": "Emily Wilson",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2025-01-12"
+    "createdAt": "2024-01-12"
   },
   {
     "id": 5,
-    "title": "Search Function Not Working",
-    "description": "Search bar returns no results even for existing products and services.",
+    "title": "Search Function Returns No Results",
+    "description": "Product search functionality is broken. No results shown for any search query.",
     "customer": "David Brown",
     "priority": "Medium",
     "status": "Open",
-    "createdAt": "2025-01-11"
+    "createdAt": "2024-01-11"
   },
   {
     "id": 6,
-    "title": "Password Reset Link Expired",
-    "description": "Password reset links expire immediately after being sent to user email.",
+    "title": "Database Connection Timeout",
+    "description": "Frequent database timeouts causing slow page loads and errors.",
     "customer": "Lisa Anderson",
-    "priority": "Low",
+    "priority": "Critical",
     "status": "Open",
-    "createdAt": "2025-01-10"
+    "createdAt": "2024-01-10"
   },
   {
     "id": 7,
-    "title": "Dashboard Loading Slowly",
-    "description": "User dashboard takes more than 30 seconds to load completely.",
+    "title": "User Profile Update Fails",
+    "description": "Users cannot update their profile information. Form submission returns error.",
     "customer": "Robert Taylor",
-    "priority": "Medium",
+    "priority": "Low",
     "status": "Open",
-    "createdAt": "2025-01-09"
+    "createdAt": "2024-01-09"
   },
   {
     "id": 8,
-    "title": "File Upload Size Limit",
-    "description": "Cannot upload files larger than 1MB even though limit should be 10MB.",
-    "customer": "Jennifer Martinez",
-    "priority": "Low",
+    "title": "File Upload Size Limit Error",
+    "description": "File upload fails for files larger than 5MB despite 10MB limit setting.",
+    "customer": "Jennifer White",
+    "priority": "Medium",
     "status": "Open",
-    "createdAt": "2025-01-08"
+    "createdAt": "2024-01-08"
   },
   {
     "id": 9,
-    "title": "API Response Timeout",
-    "description": "Third-party API integration timing out causing data sync issues.",
+    "title": "Shopping Cart Items Disappear",
+    "description": "Items randomly disappear from shopping cart during browsing session.",
     "customer": "Christopher Lee",
-    "priority": "Critical",
+    "priority": "High",
     "status": "Open",
-    "createdAt": "2025-01-07"
+    "createdAt": "2024-01-07"
   },
   {
     "id": 10,
-    "title": "User Profile Update Error",
-    "description": "Error occurs when users try to update their profile information.",
-    "customer": "Amanda White",
+    "title": "API Rate Limit Exceeded",
+    "description": "Third-party API calls failing due to rate limit. Affecting data synchronization.",
+    "customer": "Amanda Garcia",
     "priority": "Medium",
     "status": "Open",
-    "createdAt": "2025-01-06"
+    "createdAt": "2024-01-06"
   },
   {
     "id": 11,
-    "title": "Shopping Cart Items Disappear",
-    "description": "Items randomly disappear from shopping cart during browsing session.",
-    "customer": "Kevin Garcia",
-    "priority": "High",
+    "title": "SSL Certificate Expiry Warning",
+    "description": "SSL certificate expires in 7 days. Need immediate renewal to avoid service disruption.",
+    "customer": "Kevin Martinez",
+    "priority": "Critical",
     "status": "Open",
-    "createdAt": "2025-01-05"
+    "createdAt": "2024-01-05"
   },
   {
     "id": 12,
-    "title": "Two-Factor Authentication Issue",
-    "description": "2FA codes not being sent to registered phone numbers.",
+    "title": "Backup System Failure",
+    "description": "Automated backup system has failed for the past 3 days. Data at risk.",
     "customer": "Michelle Rodriguez",
-    "priority": "High",
-    "status": "Open",
-    "createdAt": "2025-01-04"
-  },
-  {
-    "id": 13,
-    "title": "Report Generation Failed",
-    "description": "Monthly reports fail to generate and download for premium users.",
-    "customer": "James Wilson",
-    "priority": "Medium",
-    "status": "Open",
-    "createdAt": "2025-01-03"
-  },
-  {
-    "id": 14,
-    "title": "Social Media Login Error",
-    "description": "Google and Facebook login options not working properly.",
-    "customer": "Rachel Thompson",
-    "priority": "Low",
-    "status": "Open",
-    "createdAt": "2025-01-02"
-  },
-  {
-    "id": 15,
-    "title": "Database Connection Timeout",
-    "description": "Intermittent database connection issues causing service disruption.",
-    "customer": "Daniel Moore",
     "priority": "Critical",
     "status": "Open",
-    "createdAt": "2025-01-01"
+    "createdAt": "2024-01-04"
   }
 ]

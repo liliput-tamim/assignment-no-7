@@ -25,19 +25,20 @@ const TaskStatus = ({ inProgressTickets, resolvedTickets, onCompleteTicket }) =>
         )}
       </div>
 
-      {resolvedTickets.length > 0 && (
-        <div className="mt-8">
-          <h3 className="text-xl font-bold mb-4 text-gray-800">Resolved Task</h3>
-          <div className="space-y-3">
-            {resolvedTickets.map((ticket) => (
+      <div className="mt-8">
+        <h3 className="text-xl font-bold mb-4 text-gray-800">Resolved Task</h3>
+        <div className="space-y-3">
+          {resolvedTickets.length === 0 ? (
+            <p className="text-gray-500 text-center py-8">No resolved tasks yet.</p>
+          ) : (
+            resolvedTickets.map((ticket) => (
               <div key={`resolved-${ticket.id}`} className="bg-gray-200 border rounded-lg p-4">
                 <h4 className="font-semibold text-gray-700 mb-1">{ticket.title}</h4>
-                
               </div>
-            ))}
-          </div>
+            ))
+          )}
         </div>
-      )}
+      </div>
     </div>
   )
 }
